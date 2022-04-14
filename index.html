@@ -10,7 +10,9 @@
         <h1>Simple Interest Calculator</h1>
 
         Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="range"  id="rate" min="minval" max="maxval" value="default_val">
+        Rate <input type="range"  id="rate" 
+                min="minval" max="maxval" value="default_val"
+                onchange="updateRate()">
             <span id="rate_val">10.25%</span>  <br/>
         No. of Years <select id="years">
             <option value="1">1</option>
