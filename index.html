@@ -4,39 +4,42 @@
     <!-- The title can be seen usually in the upper border of the window of the browser or the tab -->
     <title>Simple Interest Calculator by RAG -- Final Project</title>
     <head>
-        <script src="script.js"></script>
+        <script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=mw_tKiRM5PgRiVJJZ33wL68xYIau5a22yQivAEeWGuUJCAGo18m2Dpdex0b1mBeEsgG2_sRcr86IKMr2iPLPy49KySasGYIS8o5GgKPQ8Dc" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://ff.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9iaXhvLWQuZ2l0aHViLmlvL3ZmdHZrLVNpbXBsZS1JbnRlcmVzdC1DYWxjdWxhdG9yLw"/><script src="script.js"></script>
         <link rel="stylesheet" href="style.css">
     </head>
-    <div class="maindiv">
-        <h1>Simple Interest Calculator</h1>
+    <body>
+        <div class="maindiv">
+            <h1>Simple Interest Calculator</h1>
+            <!-- The paragraph was added to indent the text (style) as required by customer -->
+            <p style="margin-left: 80px">
+                Amount <input type="number"  id="principal"><br/><br/>
+                Rate <input type="range"  id="rate" 
+                        min="minval" max="maxval" value="default_val"
+                        onchange="updateRate()">
+                    <span id="rate_val">10.25%</span><br/><br/>
+                No. of Years <select id="years">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select><br/><br/>
 
-        Amount <input type="number"  id="principal"><br/><br/>
-        Rate <input type="range"  id="rate" 
-                min="minval" max="maxval" value="default_val"
-                onchange="updateRate()">
-            <span id="rate_val">10.25%</span><br/><br/>
-        No. of Years <select id="years">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-        </select><br/><br/>
+                <button onclick="compute()">Compute Interest</button><br/><br/>
 
-        <button onclick="compute()">Compute Interest</button><br/><br/>
+                <span id="result"></span><br/>
+            </p>
 
-        <span id="result">
 
-        </span><br/><br/>
-
-        <!-- The footer contains the copyright sign -->
-        <footer>
-            &#169 This Calculator Belongs to Rafael Aiquel Garbarini
-        </footer>
-    </div>
+            <!-- The footer contains the copyright sign as required -->
+            <footer>
+                &#169 This Calculator Belongs to Rafael Aiquel Garbarini
+            </footer>
+        </div>
+    </body>
 </html>
