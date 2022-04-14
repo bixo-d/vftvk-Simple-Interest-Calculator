@@ -7,11 +7,12 @@ h1 {
     color: grey;
     font-family: verdana
 }
+/* To center the div horizontally, margin: auto was required */
 .maindiv {
     background-color: white;
     color: black;
     width: 500px;
+    margin: auto;
     padding: 20px;
     border-radius: 25px;
-    align-self: center
 }
