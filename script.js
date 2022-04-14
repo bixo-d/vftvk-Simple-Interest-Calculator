@@ -8,9 +8,10 @@ function compute()
     var rate = document.getElementById("rate").value;
     var years = document.getElementById("years").value;
 
-    if(principal.value <= 0){
+    // Check if principal is greater than zero
+    if(principal <= 0){
         alert("Please enter a positive number");
-        principal.focus();
+        document.getElementById("principal").focus();
         return false;
     }
 
