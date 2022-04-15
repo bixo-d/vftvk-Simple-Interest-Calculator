@@ -16,3 +16,6 @@ h1 {
     padding: 20px;
     border-radius: 25px;
 }
+.indented {
+    margin-left: 80px;
+}
