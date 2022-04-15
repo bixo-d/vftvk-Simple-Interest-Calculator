@@ -23,10 +23,10 @@ function compute()
 
     // Generate the output text with the highlighting required by the customer
     document.getElementById("result").innerHTML = 
-        "If you deposit <mark>" + principal + "</mark>,<br>" +
-        "at an interest rate of <mark>" + rate + "%</mark>.<br>" +
-        "You will receive an amount of <mark>" + interest + "</mark>,<br>" +
-        "in the year <mark>" + year + "</mark>";
+        `If you deposit <mark>${principal}</mark>,<br>` +
+        `at an interest rate of <mark>${rate}%</mark>.<br>` +
+        `You will receive an amount of <mark>${interest}</mark>,<br>` +
+        `in the year <mark>${year}</mark>`;
 }
 
 // Updates de value of the text besides the slider
