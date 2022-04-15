@@ -4,7 +4,7 @@
     <!-- The title can be seen usually in the upper border of the window of the browser or the tab -->
     <title>Simple Interest Calculator by RAG -- Final Project</title>
     <head>
-        <script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=mw_tKiRM5PgRiVJJZ33wL68xYIau5a22yQivAEeWGuUJCAGo18m2Dpdex0b1mBeEsgG2_sRcr86IKMr2iPLPy49KySasGYIS8o5GgKPQ8Dc" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://ff.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9iaXhvLWQuZ2l0aHViLmlvL3ZmdHZrLVNpbXBsZS1JbnRlcmVzdC1DYWxjdWxhdG9yLw"/><script src="script.js"></script>
+        <script src="script.js"></script>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -13,8 +13,8 @@
             <!-- The paragraph was added to indent the text (style) as required by customer -->
             <p style="margin-left: 80px">
                 Amount <input type="number"  id="principal"><br/><br/>
-                Rate <input type="range"  id="rate" 
-                        min="minval" max="maxval" value="default_val"
+                Rate <input type="range" id="rate" 
+                        min="1" max="20" step=".25" value="10.25"
                         onchange="updateRate()">
                     <span id="rate_val">10.25%</span><br/><br/>
                 No. of Years <select id="years">
